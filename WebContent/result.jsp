@@ -6,6 +6,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript">
+	function goToHome(){
+		alert("Hello there!");
+		window.location="/HeadFirstMVCTwo/Form.html";
+	}
+</script>
 </head>
 <body>
 	<h1 align="center">Beer Recomendations JSP</h1>
@@ -18,5 +24,7 @@
 			out.print("<br>you should try:"+it.next());
 		}
 	%>
+	<br>
+	<button name="Home" type="button" onclick="goToHome()">Home</button>
 </body>
 </html>
